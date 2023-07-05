@@ -3,7 +3,7 @@ on:
   push:
   workflow_dispatch:
 jobs:
- BUILD:
+ Build:
   runs-on: ubuntu-latest
   steps: 
     - uses: actions/checkout@v3
@@ -12,4 +12,16 @@ jobs:
     - name: Run the testings 
       run: echo "Runing the tests" 
     - name: Build the code
-      run: echo "Build the code"
+      run: echo "Build the code
+      
+ PubToAWS:
+   runs-on: ubuntu-latest
+   steps: 
+      - uses: actions/checkout@v3
+      - name: Update RDS
+        run: echo " Update RDS " 
+      - name: Send pictures to s3
+        run: echo " Sending the code to ec2
+      - name: Send to Ec2
+        run: echo "Build the code
+
