@@ -1,0 +1,15 @@
+name: CI/CD test
+on: 
+  push:
+  workflow_dispatch:
+jobs:
+ BUILD:
+  runs-on: ubuntu-latest
+  steps: 
+    - uses: actions/checkout@v3
+    - name: Compile the code 
+      run: echo " Compiling the code"
+    - name: Run the testings 
+      run: echo "Runing the tests" 
+    - name: Build the code
+      run: echo "Build the code"
