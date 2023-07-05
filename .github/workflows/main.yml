@@ -16,6 +16,7 @@ jobs:
       
  PubToAWS:
    runs-on: ubuntu-latest
+   needs: Build
    steps: 
       - uses: actions/checkout@v3
       - name: Update RDS
