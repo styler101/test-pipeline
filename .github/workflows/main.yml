@@ -12,7 +12,7 @@ jobs:
     - name: Run the testings 
       run: echo "Runing the tests" 
     - name: Build the code
-      run: echo "Build the code
+      run: echo "Build the code"
       
  PubToAWS:
    runs-on: ubuntu-latest
