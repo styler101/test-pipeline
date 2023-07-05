@@ -21,7 +21,7 @@ jobs:
       - name: Update RDS
         run: echo " Update RDS " 
       - name: Send pictures to s3
-        run: echo " Sending the code to ec2
+        run: echo " Sending the code to ec2"
       - name: Send to Ec2
         run: echo "Build the code
 
